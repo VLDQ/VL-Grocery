@@ -1,35 +1,45 @@
-/******************************************************************
-  Template Name: Ogani
-  Description:  Ogani eCommerce  HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
-******************************************************************/
-
 /*------------------------------------------------------------------
-[Table of contents]
+[Table Of Contents]
 
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
+1.  Default CSS
+2.  Helper CSS
 3.  Header Section
 4.  Hero Section
-5.  Service Section
-6.  Categories Section
-7.  Featured Section
-8.  Latest Product Section
-9.  Contact
-10.  Footer Style
+5.  Categories Section
+6.  Featured Section
+7.  Latest Product Section
+8.  Form Blog Section
+9.  Breadcrumb
+10. Sidebar
+11. Products
+12. Product Details
+13. Shopping Details
+14. Shopping Cart
+15. Checkout
+16. Blog
+17. Blog Sidebar
+18. Blog Details Hero
+19. Blog Details
+20. Footer Section
+21. About Us
+22. Careers
+23. Contact Us
+24. Sign In Form
+25. Register Form
+26. Settings
+27. Radio Button
+28. Map
+29. Contact Us Form
+30. Careers Form
+31. FAQ
+
+**Inclusive of Responsive Media Queries (scroll to the bottom)
 -------------------------------------------------------------------*/
 
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
+/*----------------------------------------*/
+/* 1. Default CSS
+/*----------------------------------------*/
 html,
 body {
 	height: 100%;
@@ -107,10 +117,10 @@ ol {
 	margin: 0;
 }
 
-/*---------------------
-  Helper CSS
------------------------*/
 
+/*---------------------
+  2. Helper CSS
+-----------------------*/
 .section-title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -158,8 +168,7 @@ ol {
 	color: #fff;
 }
 
-/* buttons */
-
+/* --- buttons --- */
 .primary-btn {
 	display: inline-block;
 	font-size: 14px;
@@ -219,9 +228,7 @@ ol {
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-
-/* Preloader */
-
+/* --- preloader --- */
 #preloader {
 	position: fixed;
 	width: 100%;
@@ -284,25 +291,20 @@ ol {
 	}
 }
 
-
-
-/* Slideshow */
+/* --- slideshow --- */
 * {box-sizing:border-box}
 
-/* Slideshow container */
-.slideshow-container {
+.slideshow-container { /* Slideshow container */
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
-.mySlides {
+.mySlides { /* Hide the images by default */
   display: none;
 }
 
-/* Next & previous buttons */
-.prev, .next {
+.prev, .next { /* Next & previous buttons */
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -317,19 +319,16 @@ ol {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
+.next { /* Position the "next button" to the right */
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover, .next:hover { /* On hover, add a black background color with a little bit see-through */
   background-color: #717171;
 }
 
-/* Caption text */
-.text {
+.text { /* Caption text */
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -339,8 +338,7 @@ ol {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
+.numbertext { /* Number text (1/3 etc) */
   color: #ffffff;
   font-size: 12px;
   padding: 8px 12px;
@@ -348,8 +346,7 @@ ol {
   bottom: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
+.dot { /* The dots/bullets/indicators */
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -364,8 +361,7 @@ ol {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
+.fade { /* Fading animation */
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
   animation-name: fade;
@@ -382,16 +378,14 @@ ol {
   to {opacity: 1}
 }
 
-
-/* Flexible Boxes */
-.flex-container {
+.flex-container { /* Flexible Boxes */
   display: flex;
   flex-wrap: nowrap;
 }
 
 
 /*---------------------
-  Header
+  3. Header Section
 -----------------------*/
 .header {
 	background: #B4D3B2;
@@ -704,10 +698,10 @@ ol {
 	display: none;
 }
 
-/*---------------------
-  Hero
------------------------*/
 
+/*---------------------
+  4. Hero Section
+-----------------------*/
 .hero {
 	background: #E8E8E8;
 	padding-bottom: 50px;
@@ -917,10 +911,10 @@ ol {
 	margin-bottom: 35px;
 }
 
-/*---------------------
-  Categories
------------------------*/
 
+/*------------------------
+  5. Categories Section
+--------------------------*/
 .categories__item {
 	height: 270px;
 	width: 270px;
@@ -979,10 +973,10 @@ ol {
 	right: -35px;
 }
 
-/*---------------------
-  Featured
------------------------*/
 
+/*---------------------
+  6. Featured Section
+-----------------------*/
 .featured {
 	background: #E8E8E8;
 	padding-top: 80px;
@@ -1118,10 +1112,10 @@ ol {
 	margin-bottom: 5px;
 }
 
-/*---------------------
-  Latest Product
------------------------*/
 
+/*---------------------------
+  7. Latest Product Section
+-----------------------------*/
 .latest-product {
 	padding-top: 80px;
 	padding-bottom: 0;
@@ -1192,10 +1186,10 @@ ol {
 	font-weight: 700;
 }
 
-/*---------------------
-  Form BLog
------------------------*/
 
+/*-----------------------
+  8. Form Blog Section
+-------------------------*/
 .from-blog {
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -1209,8 +1203,9 @@ ol {
 	margin-bottom: 70px;
 }
 
+
 /*---------------------
-  Breadcrumb
+  9. Breadcrumb
 -----------------------*/
 /* Style the list */
 ul.breadcrumb {
@@ -1286,10 +1281,10 @@ ul.breadcrumb li a:hover {
 	color: #ffffff;
 }
 
-/*---------------------
-  Sidebar
------------------------*/
 
+/*---------------------
+  10. Sidebar
+-----------------------*/
 .sidebar__item {
 	margin-bottom: 35px;
 }
@@ -1460,10 +1455,10 @@ ul.breadcrumb li a:hover {
 	visibility: hidden;
 }
 
-/*---------------------
-  Products
------------------------*/
 
+/*---------------------
+  11. Products
+-----------------------*/
 .product {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -1874,10 +1869,10 @@ ul.breadcrumb li a:hover {
 	margin-right: 0;
 }
 
-/*---------------------
-  Product Details
------------------------*/
 
+/*---------------------
+  12. Product Details
+-----------------------*/
 .product-details {
 	padding-top: 80px;
 }
@@ -2080,10 +2075,10 @@ ul.breadcrumb li a:hover {
 	color: #666666;
 }
 
-/*---------------------
-  Shop Details
------------------------*/
 
+/*-----------------------
+  13. Shopping Details
+-------------------------*/
 .related-product {
 	padding-bottom: 30px;
 }
@@ -2092,10 +2087,10 @@ ul.breadcrumb li a:hover {
 	margin-bottom: 70px;
 }
 
-/*---------------------
-  Shop Cart
------------------------*/
 
+/*---------------------
+  14. Shopping Cart
+-----------------------*/
 .shoping-cart {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -2284,10 +2279,10 @@ ul.breadcrumb li a:hover {
 	text-align: center;
 }
 
-/*---------------------
-  Checkout
------------------------*/
 
+/*---------------------
+  15. Checkout
+-----------------------*/
 .checkout {
 	padding-top: 80px;
 	padding-bottom: 60px;
@@ -2489,10 +2484,10 @@ ul.breadcrumb li a:hover {
 	margin-top: 10px;
 }
 
-/*---------------------
-  Blog
------------------------*/
 
+/*---------------------
+  16. Blog
+-----------------------*/
 .blog__item {
 	margin-bottom: 60px;
 }
@@ -2568,10 +2563,10 @@ ul.breadcrumb li a:hover {
 	content: "";
 }
 
-/*---------------------
-  Blog Sidebar
------------------------*/
 
+/*---------------------
+  17. Blog Sidebar
+-----------------------*/
 .blog__sidebar {
 	padding-top: 50px;
 }
@@ -2684,10 +2679,10 @@ ul.breadcrumb li a:hover {
 	margin-bottom: 10px;
 }
 
-/*---------------------
-  Blog Details Hero
------------------------*/
 
+/*------------------------
+  18. Blog Details Hero
+--------------------------*/
 .blog-details-hero {
 	height: 350px;
 	display: flex;
@@ -2729,10 +2724,10 @@ ul.breadcrumb li a:hover {
 	display: none;
 }
 
-/*---------------------
-  Blog Details
------------------------*/
 
+/*---------------------
+  19. Blog Details
+-----------------------*/
 .related-blog {
 	padding-top: 70px;
 	padding-bottom: 10px;
@@ -2829,10 +2824,10 @@ ul.breadcrumb li a:hover {
 	margin-right: 0;
 }
 
-/*---------------------
-  Footer
------------------------*/
 
+/*---------------------
+  20. Footer Section
+-----------------------*/
 .footer {
 	background: #B4D3B2;
 	padding-top: 70px;
@@ -2970,8 +2965,9 @@ ul.breadcrumb li a:hover {
 	float: right;
 }
 
+
 /*---------------------
-  About Us
+  21. About Us
 -----------------------*/
 .about {
 	background: #E8E8E8;
@@ -3023,8 +3019,9 @@ ul.breadcrumb li a:hover {
 	margin-bottom: 30px;
 }
 
+
 /*---------------------
-  Careers
+  22. Careers
 -----------------------*/
 .careers {
 	background: #E8E8E8;
@@ -3052,10 +3049,10 @@ ul.breadcrumb li a:hover {
 	margin-bottom: 30px;
 }
 
-/*---------------------
-  Contact
------------------------*/
 
+/*---------------------
+  23. Contact Us
+-----------------------*/
 .contact {
 	background: #E8E8E8;
 	padding-top: 80px;
@@ -3089,10 +3086,10 @@ ul.breadcrumb li a:hover {
 	margin-bottom: 0;
 }
 
-/*---------------------
-  Sign In Form
------------------------*/
 
+/*---------------------
+  24. Sign In Form
+-----------------------*/
 .sign__in__form__title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -3184,9 +3181,8 @@ ul.breadcrumb li a:hover {
 
 
 /*---------------------
-  Register Form
+  25. Register Form
 -----------------------*/
-
 .register__form__title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -3278,9 +3274,8 @@ ul.breadcrumb li a:hover {
 
 
 /*---------------------
-  Regional Settings
+  26. Settings
 -----------------------*/
-
 .regional__settings__title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -3373,7 +3368,7 @@ ul.breadcrumb li a:hover {
 
 
 /*---------------------
-  Radio Button
+  27. Radio Button
 -----------------------*/
 /* Customize the label (the container) */
 .radiobtn_container {
@@ -3444,10 +3439,9 @@ ul.breadcrumb li a:hover {
 }
 
 
-/*---------------------
-  Map
------------------------*/
-
+/*----------------
+  28. Map
+------------------*/
 .map {
 	height: 500px;
 	position: relative;
@@ -3517,10 +3511,10 @@ ul.breadcrumb li a:hover {
 	line-height: 26px;
 }
 
-/*---------------------
-  Contact Form
------------------------*/
 
+/*------------------------
+  29. Contact Us Form
+--------------------------*/
 .contact__form__title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -3597,9 +3591,8 @@ ul.breadcrumb li a:hover {
 
 
 /*---------------------
-  Careers Form
+  30. Careers Form
 -----------------------*/
-
 .careers__form__title {
 	margin-bottom: 50px;
 	text-align: center;
@@ -3676,7 +3669,7 @@ ul.breadcrumb li a:hover {
 
 
 /*---------------------
-  FAQ
+  31. FAQ
 -----------------------*/
 .faq {
 	background: #E8E8E8;
@@ -4082,6 +4075,7 @@ img {
    	width: 300px;
    	height: 140px;
 }*/
+
 
 
 /*--------------------------------- Responsive Media Queries -----------------------------*/
