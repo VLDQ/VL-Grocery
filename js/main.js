@@ -1,12 +1,3 @@
-/*  ---------------------------------------------------
-    Template Name: Ogani
-    Description:  Ogani eCommerce  HTML Template
-    Author: Colorlib
-    Author URI: https://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
@@ -30,6 +21,7 @@
         }
     });		
 
+
     /*------------------
         Background Set
     --------------------*/
@@ -37,6 +29,7 @@
         var bg = $(this).data('setbg');
         $(this).css('background-image', 'url(' + bg + ')');
     });
+
 
 	/*------------------
         Humberger Menu
@@ -53,6 +46,7 @@
         $("body").removeClass("over_hid");
     });
 
+
     /*------------------
 		Navigation
 	--------------------*/
@@ -61,7 +55,8 @@
         allowParentLinks: true
     });
 
-    /*-----------------------
+
+    /*----------------------
         Categories Slider
     ------------------------*/
     $(".categories__slider").owlCarousel({
@@ -96,9 +91,10 @@
         }
     });
 
-	/*-----------------------------
+
+	/*------------------------------
         Categories & FAQ Dropdown
-    ------------------------------*/
+    --------------------------------*/
     $('.hero__categories__all').on('click', function(){
         $('.hero__categories ul').slideToggle(400);
     });
@@ -143,6 +139,7 @@
         $('.faq__categories10 ul').slideToggle(400);
     });
 
+
     /*--------------------------
         Latest Product Slider
     ----------------------------*/
@@ -157,6 +154,7 @@
         autoHeight: false,
         autoplay: true
     });
+
 
     /*-----------------------------
         Product Discount Slider
@@ -189,7 +187,8 @@
         }
     });
 
-    /*---------------------------------
+
+    /*--------------------------------
         Product Details Pic Slider
     ----------------------------------*/
     $(".product__details__pic__slider").owlCarousel({
@@ -202,9 +201,10 @@
         autoplay: true
     });
 
-    /*-----------------------
+
+    /*----------------------
 		Price Range Slider
-	------------------------ */
+	------------------------*/
     var rangeSlider = $(".price-range"),
         minamount = $("#minamount"),
         maxamount = $("#maxamount"),
@@ -223,10 +223,12 @@
     minamount.val('$' + rangeSlider.slider("values", 0));
     maxamount.val('$' + rangeSlider.slider("values", 1));
 
-    /*--------------------------
+
+    /*--------------
         Select
-    ----------------------------*/
+    ----------------*/
     $("select").niceSelect();
+
 
     /*------------------
 		Single Product
@@ -242,8 +244,9 @@
         }
     });
 
+
     /*-------------------
-		Quantity change
+		Quantity Change
 	--------------------- */
     var proQty = $('.pro-qty');
     proQty.prepend('<span class="dec qtybtn">-</span>');
@@ -254,7 +257,7 @@
         if ($button.hasClass('inc')) {
             var newVal = parseFloat(oldValue) + 1;
         } else {
-            // Don't allow decrementing below zero
+            //Do not allow decrementing below zero
             if (oldValue > 0) {
                 var newVal = parseFloat(oldValue) - 1;
             } else {

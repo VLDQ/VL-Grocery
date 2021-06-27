@@ -31,13 +31,18 @@ showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  
   for (i = 0; i < slides.length; i++) {
 	slides[i].style.display = "none";
   }
+  
   slideIndex++;
+  
   if (slideIndex > slides.length) {slideIndex = 1}
+  
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
+  
+  setTimeout(showSlides, 3000); //Change image every 3 seconds
 }
 
 
@@ -46,6 +51,7 @@ function showSlides() {
 --------------------*/
 function showPasswordFunction() {
   var x = document.getElementById("my_password");
+  
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -59,6 +65,7 @@ function showPasswordFunction() {
 ------------------------------*/
 function showConfirmPasswordFunction() {
   var x = document.getElementById("my_confirmpassword");
+  
   if (x.type === "password") {
     x.type = "text";
   } else {
@@ -90,7 +97,7 @@ function validatePassword() {
 /*-------------------------------
 	Validate Confirm Password
 ---------------------------------*/
-function validateConfirmPassword(){	
+function validateConfirmPassword() {	
   var my_password = document.getElementById("my_password"), my_confirmpassword = document.getElementById("my_confirmpassword");
   
   if(my_password.value != my_confirmpassword.value) {
